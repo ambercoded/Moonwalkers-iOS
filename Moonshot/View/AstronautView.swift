@@ -20,6 +20,7 @@ struct AstronautView: View {
                         .scaledToFit()
                         .frame(width: geo.size.width)
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                        .padding()
 
                     Text("Missions")
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)

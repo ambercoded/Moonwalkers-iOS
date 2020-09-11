@@ -14,7 +14,7 @@ struct MissionView: View {
     let missions: [Mission]
     
     var body: some View {
-        NavigationView {
+      
             GeometryReader { geo in
                 ScrollView(.vertical) {
                     VStack {
@@ -59,7 +59,8 @@ struct MissionView: View {
             .navigationBarTitle(self.mission.displayName)
         }
         
-    }
+        
+    
     
     init(mission: Mission, astronauts: [Astronaut], missions: [Mission]) {
         self.mission = mission
@@ -92,6 +93,7 @@ struct MissionDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             MissionView(mission: Self.missions[2], astronauts: Self.astronauts, missions: missions)
+                .navigationBarHidden(true)
         }
     }
 }
