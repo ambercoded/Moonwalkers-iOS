@@ -18,7 +18,6 @@ struct AstronautView: View {
                     Image(astronaut.id)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: geo.size.width)
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                         .padding()
 
